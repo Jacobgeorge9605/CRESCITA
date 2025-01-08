@@ -6,11 +6,12 @@ import EventTimer from '/src/components/cover/EventTimer.jsx'; // Adjust the pat
 
 // Array of colors for letters
 const colors = [
-  '#FF5733', // Orange
-  '#33FF57', // Green
-  '#3357FF', // Blue
-  '#FF33A8', // Pink
-  '#FFD700', // Gold
+  // '#FF5733', // Orange
+  // '#33FF57', // Green
+  // '#3357FF', // Blue
+  // '#FF33A8', // Pink
+  // '#FFD700', // Gold
+  '#add8e6',
 ];
 
 // Generate letter animation variants
@@ -71,8 +72,8 @@ function Cover() {
         backgroundColor: 'rgba(255, 255, 255, 0.05)',
       }}
     >
-      <br/>
-      <br/>
+      <br />
+      <br />
       <AnimatedText
         text="CRESCITA 2.0"
         variant="h1"
