@@ -4,6 +4,7 @@ import { motion} from 'framer-motion'
 import React from 'react'
 import lbsconnect from '../../../assets/sponsored/lbsconnect.png'
 import bg from '../../../assets/background/sponsor_bg.svg'
+import { Background } from 'tsparticles-engine'
 
 const animationParent = {
   hidden: { opacity: 0, y: 10 },

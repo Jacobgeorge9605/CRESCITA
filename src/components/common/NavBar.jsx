@@ -21,23 +21,25 @@ function NavBar() {
 
   const pages = isLoggedIn
     ? [
-        'Home',
-        'About',
-        'Events',
-        'Sponsors',
-        'CA Profile',
-        'CA Leaderboard',
-        'Gallery'
-      ]
+      'Home',
+      'About',
+      'Events',
+      'Contact US',
+      // 'Sponsors',
+      // 'CA Profile',
+      // 'CA Leaderboard',
+      'Gallery'
+    ]
     : [
-        'Home',
-        'About',
-        'Events',
-        'Sponsors',
-        // 'Campus Ambassador',
-        // 'CA Leaderboard',
-        'Gallery'
-      ]
+      'Home',
+      'About',
+      'Events',
+      'Contact US',
+      // 'Sponsors',
+      // 'Campus Ambassador',
+      // 'CA Leaderboard',
+      'Gallery'
+    ]
 
   React.useEffect(() => {
     const el = document.getElementById('main-cont')
@@ -68,6 +70,8 @@ function NavBar() {
         return '#about'
       case 'Events':
         return '/#events'
+      case 'Footer':
+        return '/#footer'
       case 'Sponsors':
         return '/#sponsor'
       case 'Gallery':
@@ -134,7 +138,7 @@ function NavBar() {
                 textDecoration: 'none'
               }}
             >
-             CRESCITA 2.0
+              CRESCITA 2.0
             </Typography>
           </Box>
           <SidePanel

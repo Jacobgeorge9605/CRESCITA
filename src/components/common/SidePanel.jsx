@@ -44,11 +44,12 @@ function SidePanel({ anchorEl, close, isHome = false }) {
         'Home',
         'About',
         'Events',
-        'Sponsors',
-        'CA Profile',
-        'CA Leaderboard',
+        
+        // 'CA Profile',
+        // 'CA Leaderboard',
 
-        'Gallery'
+        'Gallery',
+        'Contact US',
       ]
       : ['Home', 'CA Profile', 'CA Leaderboard']
     : isHome
@@ -56,10 +57,10 @@ function SidePanel({ anchorEl, close, isHome = false }) {
         'Home',
         'About',
         'Events',
-        'Sponsors',
+        'Contact US',
 
         // 'Campus Ambassador',
-        'CA Leaderboard',
+        // 'CA Leaderboard',
         'Gallery'
       ]
       : ['Home']
@@ -73,16 +74,17 @@ function SidePanel({ anchorEl, close, isHome = false }) {
         return '#about'
       case 'Events':
         return '/#events'
-      case 'Sponsors':
-        return '/#sponsor'
+      
       case 'Gallery':
         return '/#gallery'
-      case 'Campus Ambassador':
-        return '/#campus-ambassador'
-      case 'CA Profile':
-        return '/ambassador-profile'
-      case 'CA Leaderboard':
-        return '/ambassador-leaderboard'
+      case 'Sponsors':
+        return '/#Contact US'
+      // case 'Campus Ambassador':
+      //   return '/#campus-ambassador'
+      // case 'CA Profile':
+      //   return '/ambassador-profile'
+      // case 'CA Leaderboard':
+        // return '/ambassador-leaderboard'
       default:
         return '#about'
     }

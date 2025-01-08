@@ -173,7 +173,7 @@ function Schedules() {
                 show me more events
               </Link> */}
               <Button color="secondary" onClick={() => navigate('/events')}>
-                Show me more events
+                {/* Show me more events */}
               </Button>
 
               <Divider sx={{ flexGrow: 1 }} />

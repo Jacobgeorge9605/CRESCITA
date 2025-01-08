@@ -19,74 +19,74 @@ import { DataGrid,GridToolbarExport,
         
       ];
 
-const CampusAmbassador = () => {
-    const [data,setData]=useState([]);
+// const CampusAmbassador = () => {
+//     const [data,setData]=useState([]);
    
       
-    useEffect(() => {
+//     useEffect(() => {
 
 
-        getEvents();
+//         getEvents();
        
 
         
       
-         }, [])
-         const getEvents=()=>{
-          instance({
-            url: "/ca",
+//          }, [])
+//          const getEvents=()=>{
+//           instance({
+//             url: "/ca",
            
            
-          }).then((response) => {
-            setData(response.data.data)
-           })
-          .catch((error) => {
-            handleClose();
-           console.log(error)
-          });
-         }
+//           }).then((response) => {
+//             setData(response.data.data)
+//            })
+//           .catch((error) => {
+//             handleClose();
+//            console.log(error)
+//           });
+//          }
 
 
          
 
-         const rows=
-         data?.map((item,indx)=>(
+//          const rows=
+//          data?.map((item,indx)=>(
      
-          {id:indx+1,
-           name:item?.name,
-           email:item?.email,
-           phone:item?.phone,
-           college:item?.college,
-           dept:item?.dept,
-           semester:item?.semester,
-           referralCode:item?.referralCode,
-           score:item?.score,
-         }
-         ))
+//           {id:indx+1,
+//            name:item?.name,
+//            email:item?.email,
+//            phone:item?.phone,
+//            college:item?.college,
+//            dept:item?.dept,
+//            semester:item?.semester,
+//            referralCode:item?.referralCode,
+//            score:item?.score,
+//          }
+//          ))
 
 
-    return (
-        <div>
+//     return (
+//         <div>
 
             
-< Box sx={{ height: 628, width: '100%' }}>
-      <DataGrid
-        rows={rows}
-        columns={columns}
-        initialState={{
-          pagination: {
-            paginationModel: {
-              pageSize:10,
-            },
-          },
-        }}
-        pageSizeOptions={[10,25]}
+// < Box sx={{ height: 628, width: '100%' }}>
+//       <DataGrid
+//         rows={rows}
+//         columns={columns}
+//         initialState={{
+//           pagination: {
+//             paginationModel: {
+//               pageSize:10,
+//             },
+//           },
+//         }}
+//         pageSizeOptions={[10,25]}
         
-        disableRowSelectionOnClick
-      />
-    </Box>
-        </div>
-    );
-}
+//         disableRowSelectionOnClick
+//       />
+//     </Box>
+//         </div>
+//     );
+// }
 
 export default CampusAmbassador;

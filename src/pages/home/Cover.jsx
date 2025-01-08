@@ -1,29 +1,63 @@
-import { Box, Typography } from '@mui/material'
-import React from 'react'
-import { motion } from 'framer-motion'
+import { Box, Typography, Button } from '@mui/material';
+import React from 'react';
+import { motion } from 'framer-motion';
+import EventTimer from '/src/components/cover/EventTimer.jsx'; // Adjust the path as per your folder structure
 
-import '../../components/cover/cover.css'
-import EventTimer from '../../components/cover/EventTimer'
-import TeranisLogo from '../../components/cover/TeranisLogo'
 
-const animationParent = {
-  hidden: { opacity: 0, y: 10 },
+// Array of colors for letters
+const colors = [
+  '#FF5733', // Orange
+  '#33FF57', // Green
+  '#3357FF', // Blue
+  '#FF33A8', // Pink
+  '#FFD700', // Gold
+];
+
+// Generate letter animation variants
+const createLetterVariants = (index) => ({
+  hidden: { opacity: 0, color: colors[index % colors.length] },
   show: {
-    opacity: 1,
-    y: 0,
-    transition: { staggerChildren: 0.2, duration: 0.05 }
-  }
-}
+    opacity: [0.2, 1, 0.2],
+    color: colors[index % colors.length],
+    transition: {
+      repeat: Infinity,
+      repeatType: 'reverse',
+      duration: 1.5,
+      delay: index * 0.2,
+    },
+  },
+});
 
-const animationChild = {
-  hidden: { opacity: 0, y: 10 },
-  show: {
-    opacity: 1,
-    y: 0
-  }
-}
+// AnimatedText Component
+const AnimatedText = ({ text, variant, fontSize, letterSpacing }) => (
+  <Typography
+    component={motion.div}
+    initial="hidden"
+    animate="show"
+    variants={{
+      hidden: { opacity: 0 },
+      show: { opacity: 1, transition: { staggerChildren: 0.2 } },
+    }}
+    variant={variant}
+    sx={{
+      display: 'flex',
+      gap: '0.1em',
+      fontSize,
+      letterSpacing,
+    }}
+  >
+    {text.split('').map((char, index) => (
+      <motion.span key={index} variants={createLetterVariants(index)}>
+        {char}
+      </motion.span>
+    ))}
+  </Typography>
+);
 
+// Cover Component
 function Cover() {
+  const registrationLink = "https://forms.gle/qpsBnJVdueBW5kHM6"; // Registration form link
+
   return (
     <Box
       sx={{
@@ -34,104 +68,61 @@ function Cover() {
         justifyContent: 'center',
         alignItems: 'center',
         backdropFilter: 'blur(3px) saturate(110%)',
-        backgroundColor: 'rgba(255, 255, 255,0.05)'
+        backgroundColor: 'rgba(255, 255, 255, 0.05)',
       }}
-      component={motion.div}
-      initial="hidden"
-      whileInView="show"
-      variants={animationParent}
-      viewport={{ once: true }}
     >
-      <motion.div variants={animationChild} viewport={{ once: true }}>
-        <TeranisLogo />
-      </motion.div>
-      <Typography
-        component={motion.h1}
-        variants={animationChild}
-        viewport={{ once: true }}
+      <br/>
+      <br/>
+      <AnimatedText
+        text="CRESCITA 2.0"
         variant="h1"
-        color="text.primary"
+        fontSize={{ xs: '40px', md: '50px', lg: '60px' }}
         letterSpacing="4px"
-        fontFamily="Audiowide"
-        sx={{ fontSize: { xs: '40px', md: '50px', lg: '60px' }, mb: 1 }}
-      >
-        CRESCITA 2.0 
-        {/* &apos;24 */}
-      </Typography>
-      <Typography
-        component={motion.h1}
-        variants={animationChild}
-        viewport={{ once: true }}
+      />
+      <br />
+      <br />
+      <AnimatedText
+        text="IEEE Student Branch"
         variant="h1"
-        color="text.secondary"
-        sx={{ fontSize: { xs: '12px', md: '20px', lg: '28px' } }}
-      >
-        IEEE Student Branch LBS College of Engineering Kasaragod
-      </Typography>
-      <Typography
-        component={motion.p}
-        variants={animationChild}
-        viewport={{ once: true }}
+        fontSize={{ xs: '12px', md: '20px', lg: '28px' }}
+        letterSpacing="2px"
+      />
+      <AnimatedText
+        text="LBS COLLEGE OF ENGINEERING KASARAGOD"
         variant="body1"
-        color="secondary.light"
+        fontSize={{ xs: '10px', md: '14px', lg: '18px' }}
+        letterSpacing="1.5px"
+      />
+      <br />
+      <EventTimer date="2025-01-24T00:00:00" size="medium" />
+
+      <Button
+        component={motion.button}
+        whileHover={{ scale: 1.1 }} // Button hover effect
+        whileTap={{ scale: 0.9 }} // Button tap effect
+        onClick={() => window.location.href = registrationLink} // Redirect to registration link
         sx={{
-          letterSpacing: '1.5px',
-          fontSize: { xs: '10px', md: '14px', lg: '18px' },
-          mt: 1,
-          mb: 5
+          mt: 4,
+          px: 4,
+          py: 1,
+          backgroundColor: '#007BFF',
+          color: '#fff',
+          fontSize: '16px',
+          fontWeight: 'bold',
+          textTransform: 'uppercase',
+          borderRadius: '20px',
+          boxShadow: '0px 4px 10px rgba(0, 123, 255, 0.3)',
+          '&:hover': {
+            backgroundColor: '#0056b3',
+          },
         }}
       >
-        LBS COLLEGE OF ENGINEERING KASARAGOD
-      </Typography>
-      {/* <Typography
-        component={motion.p}
-        variants={animationChild}
-        viewport={{ once: true }}
-        variant="body2"
-        color="text.disabled"
-        sx={{
-          letterSpacing: '1.5px',
-          minWidth: '19rem',
-          width: 'min(70vw,30rem)',
-          mt: 1
-        }}
-      >
-        begins in
-      </Typography>
-      <Box
-        component={motion.div}
-        variants={animationChild}
-        viewport={{ once: true }}
-        sx={{
-          display: 'flex',
-          flexDirection: 'row',
-          alignItems: 'end',
-          justifyContent: 'space-between',
-          gap: 3,
-          px: 1,
-          my: 0.5
-        }}
-      >
-        <EventTimer date="2023-04-28T00:00:00" size="small" />
-      </Box>
-      <Typography
-        component={motion.p}
-        variants={animationChild}
-        viewport={{ once: true }}
-        variant="body2"
-        color="text.secondary"
-        align="right"
-        sx={{
-          minWidth: '19rem',
-          letterSpacing: '1.5px',
-          width: 'min(70vw,30rem)',
-          mb: 4
-        }}
-      >
-        stay tuned.
-      </Typography> */}
+        Register Now (Early Bird offer)
+      </Button>
+
+
     </Box>
-  )
+  );
 }
 
-export default Cover
+export default Cover;

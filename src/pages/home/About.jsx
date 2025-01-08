@@ -79,7 +79,7 @@ function About() {
             color="text.primary"
             sx={{ fontSize: { xs: '20px', md: '24px', lg: '28px' } }}
           >
-            WELCOME <br />
+            WELCOME
             TO CRESCITA 2.0
             {/* &apos;24 */}
           </Typography>
@@ -96,11 +96,11 @@ function About() {
               fontSize: { xs: '13px', md: '14px', lg: '16px' }
             }}
           >
-            Lore ipsum dolor sit amet, consectetur adipiscing elit,
-            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-            ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-            cillum dolore eu fugiat nulla pariatur
+            Crescita 2.0 is the three-day flagship event of IEEE SB
+            LBSCEK, bringing together students and tech
+            enthusiasts from across Kerala on January 24, 25, and
+            26, 2025.
+           
           </Typography>
 
           <Typography
@@ -115,10 +115,18 @@ function About() {
               fontSize: { xs: '13px', md: '14px', lg: '16px' }
             }}
           >
-            ghjcjggggggggggg fhfghyf  fdhfghfghfg dfgdgdfg dfgdfgdfg
-            dfgdfgdfgbc dgdg dadfrsdfsdf sdfs f sdf sdf asf sdff sdfsd
-            sdfsdf sdfsdf sdfdsf sdf ssdf sdfsdfsdf sdf sdfsdf sdfsdf sdfsdfsdf
-            sdfsdf sdf sd sdf sdf dsf dsf sdfsfds sdfsfsdfsdf sdfsd fsdf .
+            As the biggest technical fest ever hosted at LBS
+            College of Engineering, Kasaragod, Crescita promises
+            a perfect blend of innovation, learning, and
+            entertainment. The event will feature engaging
+            technical talks by industry experts, hands-on
+            workshops to enhance skills, exciting competitions
+            and games that spark creativity, and a thrilling music
+            night to conclude the celebrations. Participants can
+            also look forward to memorable outings to explore the
+            beauty of Kasaragod.
+            Crescita 2.0 is not just an event—it’s a celebration of
+            technology, talent, and collaboration.
           </Typography>
         </Box>
 

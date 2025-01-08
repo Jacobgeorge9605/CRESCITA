@@ -58,9 +58,10 @@ function Home() {
 
       <Cover />
       <About />
+      {/* <Event /> */}
       <Schedules />
-      <Sponsor />
-      <Ambassador />
+      {/* <Sponsor /> */}
+      {/* <Ambassador /> */}
       <Gallery />
       <Footer />
     </div>

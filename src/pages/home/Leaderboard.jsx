@@ -13,58 +13,58 @@ import Appbar from '../../components/ambassador/AppBar'
 //   }
 // }
 
-function LeaderboardItem({ id, name, college, points, image }) {
-  return (
-    <Box
-      component={Paper}
-      sx={{
-        borderRadius: '20px',
-        display: 'flex',
-        alignItems: 'center',
-        // border: 1.5,
-        p: 2.5,
-        my: 1.5,
-        gap: 1,
-        borderColor: 'rgba(255,255,255,0.05)',
-        backdropFilter: 'blur(8px) saturate(130%)',
-        background:
-          'linear-gradient(135deg, rgba(123,126,175,0.3) 0%, rgba(223,66,177,0.3) 100%)'
-      }}
-    >
-      <Typography color="text.primary">{id}</Typography>
-      {image === null ? (
-        <Avatar
-          {...stringAvatar(String(name))}
-          sx={{
-            ...stringAvatar(String(name)).sx,
+// function LeaderboardItem({ id, name, college, points, image }) {
+//   return (
+//     <Box
+//       component={Paper}
+//       sx={{
+//         borderRadius: '20px',
+//         display: 'flex',
+//         alignItems: 'center',
+//         // border: 1.5,
+//         p: 2.5,
+//         my: 1.5,
+//         gap: 1,
+//         borderColor: 'rgba(255,255,255,0.05)',
+//         backdropFilter: 'blur(8px) saturate(130%)',
+//         background:
+//           'linear-gradient(135deg, rgba(123,126,175,0.3) 0%, rgba(223,66,177,0.3) 100%)'
+//       }}
+//     >
+//       <Typography color="text.primary">{id}</Typography>
+//       {image === null ? (
+//         <Avatar
+//           {...stringAvatar(String(name))}
+//           sx={{
+//             ...stringAvatar(String(name)).sx,
 
-            fontSize: '24px',
-            width: '2.5rem',
-            height: '2.5rem',
-            fontWeight: 600,
-            mx: 1
-          }}
-        />
-      ) : (
-        <Avatar
-          src={image}
-          sx={{
-            width: '2.5rem',
-            height: '2.5rem',
-            mx: 1
-          }}
-        />
-      )}
-      <div style={{ flexGrow: 1 }}>
-        <Typography color="text.primary">{name}</Typography>
-        <Typography variant="body2" fontSize="0.7rem" color="text.primary">
-          {college}
-        </Typography>
-      </div>
-      <Typography color="text.primary">{points}</Typography>
-    </Box>
-  )
-}
+//             fontSize: '24px',
+//             width: '2.5rem',
+//             height: '2.5rem',
+//             fontWeight: 600,
+//             mx: 1
+//           }}
+//         />
+//       ) : (
+//         <Avatar
+//           src={image}
+//           sx={{
+//             width: '2.5rem',
+//             height: '2.5rem',
+//             mx: 1
+//           }}
+//         />
+//       )}
+//       <div style={{ flexGrow: 1 }}>
+//         <Typography color="text.primary">{name}</Typography>
+//         <Typography variant="body2" fontSize="0.7rem" color="text.primary">
+//           {college}
+//         </Typography>
+//       </div>
+//       <Typography color="text.primary">{points}</Typography>
+//     </Box>
+//   )
+// }
 
 export default function Leaderboard() {
   const [rows, setRows] = React.useState([])
