@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Audiowide&family=Kanit:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400&display=swap");
+
+body {
+  background-color: #151853;
+  margin: 0;
+  max-height: 100vh;
+  width: 100vw;
+  overflow-y: hidden;
+}
+
+#root {
+  max-height: 100vh;
+  width: 100%;
+}
+
+.gallery-image:hover {
+  transform: scale(1.25);
+  transition: all 0.3s ease-out;
+  transform-origin: center;
+}
+
+#main-cont {
+  height: 100vh;
+  width: 100vw;
+  overflow-y: scroll;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  scroll-behavior: smooth;
+}
+
+@keyframes heartbeat {
+  from {
+    transform: scale(1);
+    transform-origin: center center;
+    animation-timing-function: ease-out;
+    opacity:0.7;
+  }
+  10% {
+    transform: scale(0.96);
+    animation-timing-function: ease-in;
+    opacity:0.4;
+  }
+  17% {
+    transform: scale(0.99);
+    animation-timing-function: ease-out;
+    opacity:0.6;
+  }
+  33% {
+    transform: scale(0.93);
+    animation-timing-function: ease-in;
+    opacity:0.2;
+  }
+  45% {
+    transform: scale(1);
+    animation-timing-function: ease-out;
+    opacity:0.7;
+  }
+}

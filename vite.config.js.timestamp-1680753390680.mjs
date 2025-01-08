@@ -1,0 +1,18 @@
+// vite.config.js
+import { defineConfig } from 'file:///home/white/Teranis23/Teranis23/node_modules/vite/dist/node/index.js'
+import react from 'file:///home/white/Teranis23/Teranis23/node_modules/@vitejs/plugin-react/dist/index.mjs'
+
+const vite_config_default = defineConfig({
+  plugins: [react()],
+  assetsInclude: ['**/*.JPG'],
+  resolve: {
+    alias: [
+      {
+        find: './runtimeConfig',
+        replacement: './runtimeConfig.browser'
+      }
+    ]
+  }
+})
+export { vite_config_default as default }
+// # sourceMappingURL=data:application/json;base64,ewogICJ2ZXJzaW9uIjogMywKICAic291cmNlcyI6IFsidml0ZS5jb25maWcuanMiXSwKICAic291cmNlc0NvbnRlbnQiOiBbImNvbnN0IF9fdml0ZV9pbmplY3RlZF9vcmlnaW5hbF9kaXJuYW1lID0gXCIvaG9tZS93aGl0ZS9UZXJhbmlzMjMvVGVyYW5pczIzXCI7Y29uc3QgX192aXRlX2luamVjdGVkX29yaWdpbmFsX2ZpbGVuYW1lID0gXCIvaG9tZS93aGl0ZS9UZXJhbmlzMjMvVGVyYW5pczIzL3ZpdGUuY29uZmlnLmpzXCI7Y29uc3QgX192aXRlX2luamVjdGVkX29yaWdpbmFsX2ltcG9ydF9tZXRhX3VybCA9IFwiZmlsZTovLy9ob21lL3doaXRlL1RlcmFuaXMyMy9UZXJhbmlzMjMvdml0ZS5jb25maWcuanNcIjtpbXBvcnQgeyBkZWZpbmVDb25maWcgfSBmcm9tICd2aXRlJ1xuaW1wb3J0IHJlYWN0IGZyb20gJ0B2aXRlanMvcGx1Z2luLXJlYWN0J1xuXG4vLyBodHRwczovL3ZpdGVqcy5kZXYvY29uZmlnL1xuZXhwb3J0IGRlZmF1bHQgZGVmaW5lQ29uZmlnKHtcbiAgcGx1Z2luczogW3JlYWN0KCldLFxuICBhc3NldHNJbmNsdWRlOiBbJyoqLyouSlBHJ10sXG4gIHJlc29sdmU6IHtcbiAgICBhbGlhczogW1xuICAgICAge1xuICAgICAgICBmaW5kOiAnLi9ydW50aW1lQ29uZmlnJyxcbiAgICAgICAgcmVwbGFjZW1lbnQ6ICcuL3J1bnRpbWVDb25maWcuYnJvd3NlcidcbiAgICAgIH1cbiAgICBdXG4gIH1cbn0pXG4iXSwKICAibWFwcGluZ3MiOiAiO0FBQStRLFNBQVMsb0JBQW9CO0FBQzVTLE9BQU8sV0FBVztBQUdsQixJQUFPLHNCQUFRLGFBQWE7QUFBQSxFQUMxQixTQUFTLENBQUMsTUFBTSxDQUFDO0FBQUEsRUFDakIsZUFBZSxDQUFDLFVBQVU7QUFBQSxFQUMxQixTQUFTO0FBQUEsSUFDUCxPQUFPO0FBQUEsTUFDTDtBQUFBLFFBQ0UsTUFBTTtBQUFBLFFBQ04sYUFBYTtBQUFBLE1BQ2Y7QUFBQSxJQUNGO0FBQUEsRUFDRjtBQUNGLENBQUM7IiwKICAibmFtZXMiOiBbXQp9Cg==
