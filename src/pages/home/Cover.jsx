@@ -11,7 +11,7 @@ const colors = [
   // '#3357FF', // Blue
   // '#FF33A8', // Pink
   // '#FFD700', // Gold
-  '#add8e6',
+  '#04d9ff',
 ];
 
 // Generate letter animation variants
@@ -23,8 +23,8 @@ const createLetterVariants = (index) => ({
     transition: {
       repeat: Infinity,
       repeatType: 'reverse',
-      duration: 1.5,
-      delay: index * 0.2,
+      duration: 2.5,
+      delay: index * 0.1,
     },
   },
 });
@@ -76,8 +76,9 @@ function Cover() {
       <br />
       <AnimatedText
         text="CRESCITA 2.0"
+        fontFamily="Audiowide"
         variant="h1"
-        fontSize={{ xs: '40px', md: '50px', lg: '60px' }}
+        fontSize={{ xs: '45px', md: '50px', lg: '60px' }}
         letterSpacing="4px"
       />
       <br />
@@ -85,8 +86,8 @@ function Cover() {
       <AnimatedText
         text="IEEE Student Branch"
         variant="h1"
-        fontSize={{ xs: '12px', md: '20px', lg: '28px' }}
-        letterSpacing="2px"
+        fontSize={{ xs: '15px', md: '20px', lg: '28px' }}
+        letterSpacing="1.5px"
       />
       <AnimatedText
         text="LBS COLLEGE OF ENGINEERING KASARAGOD"

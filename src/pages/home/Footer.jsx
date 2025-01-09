@@ -33,15 +33,15 @@ const Footer = () => {
       description: 'Hridyaprabha M, Student Co-ordinator, Crescita 2.0',
       whatsapp: 'https://wa.me/917012229415',
     },
+    // {
+    //   label: '+91 9605980433',
+    //   description: 'Jacob George, Webmaster, Crescita 2.0',
+    //   whatsapp: 'https://wa.me/919605980433',
+    // },
     {
-      label: '+91 9605980433',
-      description: 'Jacob George, Webmaster, Crescita 2.0',
-      whatsapp: 'https://wa.me/919605980433',
-    },
-    {
-      label: '+91 9447341312',
-      description: 'Staff Co-ordinator',
-      whatsapp: 'https://wa.me/919447341312',
+      label: '+91 8129619257',
+      description: 'Prof Rensi Sam Mathew, Staff Co-ordinator',
+      whatsapp: 'https://wa.me/918129619257',
     },
   ];
 
@@ -186,11 +186,16 @@ const Footer = () => {
                   variants={animationChild}
                   viewport={{ once: true }}
                   color="text.primary"
-                  sx={{ fontSize: { xs: '18px', md: '20px' }, mb: 1 }}
+                  sx={{
+                    color: '#04d9ff', // Added this line
+                    fontSize: { xs: '18px', md: '20px' },
+                    mb: 1,
+                  }}
                   fontWeight={600}
                 >
                   Contact
                 </Typography>
+
                 {contacts.map((contact, index) => (
                   <Box key={index} sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
                     <Link

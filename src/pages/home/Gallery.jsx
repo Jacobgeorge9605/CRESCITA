@@ -80,6 +80,7 @@ export default function Gallery() {
           variant="h6"
           align="center"
           sx={{
+            color:'#04d9ff',
             borderBottom: 2,
             py: 0.8,
             letterSpacing: '1px',
@@ -98,12 +99,12 @@ export default function Gallery() {
           variant="h4"
           fontWeight={600}
           color="text.primary"
-          sx={{ fontSize: { xs: '20px', md: '24px', lg: '28px' }, mb: 2 }}
+          sx={{ fontSize: { xs: '10px', md: '24px', lg: '28px' }, mb: 2 }}
           component={motion.h4}
           variants={animationChild}
           viewport={{ once: true }}
         >
-          MOMENTS
+          Moments of CRESCITA 2019
            {/* &apos;23 */}
         </Typography>
 

@@ -59,12 +59,13 @@ function About() {
             variant="h6"
             align="center"
             sx={{
+              color:'#04d9ff',
               borderBottom: 2,
               py: 0.8,
               letterSpacing: '1px',
               width: '2.8rem',
               mb: 2,
-              fontSize: { xs: '14px', lg: '16px' }
+              fontSize: { xs: '14px', lg: '16px' },
             }}
           >
             ABOUT
@@ -77,7 +78,7 @@ function About() {
             variant="h4"
             fontWeight={600}
             color="text.primary"
-            sx={{ fontSize: { xs: '20px', md: '24px', lg: '28px' } }}
+            sx={{ fontSize: { xs: '15px', md: '24px', lg: '28px' } }}
           >
             WELCOME
             TO CRESCITA 2.0
