@@ -5,7 +5,7 @@ import { BsFillGiftFill } from 'react-icons/bs'
 import { MdCategory } from 'react-icons/md'
 import { IoTicketOutline } from 'react-icons/io5'
 import { AiFillCalendar } from 'react-icons/ai'
-import imagefile from '../../../assets/teranis_22/1.jpg'
+import imagefile from '../../../assets/teranis_22/2.jpg'
 
 function Event({ data, open, ...props }) {
   return (

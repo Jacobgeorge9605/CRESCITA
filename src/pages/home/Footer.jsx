@@ -77,6 +77,7 @@ const Footer = () => {
         backdropFilter: 'blur(5px) saturate(110%)',
         backgroundColor: 'rgba(255, 255, 255, 0.05)',
       }}
+      id="contact-us"
     >
       <Container
         disableGutters

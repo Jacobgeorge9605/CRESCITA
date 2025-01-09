@@ -17,7 +17,7 @@ import {
 import { MdCategory, MdLocationPin } from 'react-icons/md'
 import { AiFillCalendar, AiFillClockCircle } from 'react-icons/ai'
 import CloseIcon from '@mui/icons-material/Close'
-import imagefile from '../../../assets/teranis_22/1.jpg'
+import imagefile from '../../../assets/teranis_22/2.jpg'
 
 const Dialog = styled(MuiDialog)(() => ({
   '& .MuiDialog-paper': {

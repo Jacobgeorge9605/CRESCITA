@@ -24,21 +24,21 @@ function NavBar() {
       'Home',
       'About',
       'Events',
-      'Contact US',
       // 'Sponsors',
       // 'CA Profile',
       // 'CA Leaderboard',
-      'Gallery'
+      'Gallery',
+      'Contact',
     ]
     : [
       'Home',
       'About',
       'Events',
-      'Contact US',
       // 'Sponsors',
       // 'Campus Ambassador',
       // 'CA Leaderboard',
-      'Gallery'
+      'Gallery',
+      'Contact',
     ]
 
   React.useEffect(() => {
@@ -76,6 +76,8 @@ function NavBar() {
         return '/#sponsor'
       case 'Gallery':
         return '/#gallery'
+      case 'Contact':
+        return '/#contact-us'
       // case 'Campus Ambassador':
       //   return '/#campus-ambassador'
       // case 'CA Profile':

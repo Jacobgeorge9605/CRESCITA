@@ -32,22 +32,49 @@ const animationChild = {
 }
 
 function Schedules() {
-  const [events, setEvents] = React.useState([])
+  const [events, setEvents] = useState([
+    {
+      id: 1,
+      name: '🛠 Workshops',
+      desc: 'Various technical workshops.',
+      bannerUrl: 'https://i.gyazo.com/b24d4a7ef0496e801231b162a909e9a1.jpg',
+      fee: '10',
+      date: '2022-10-10',
+      eventType: 'Technical'
+    },
+    {
+      id: 2,
+      name: '🎙 Inspiring Talks',
+      desc: 'Motivational and educational talks.',
+      bannerUrl: '/path/to/inspiring_talks.jpg',
+      fee: '15'
+    },
+    {
+      id: 3,
+      name: '🎭 Cultural Events',
+      desc: 'Celebrating diverse cultures.',
+      bannerUrl: '/path/to/cultural_events.jpg',
+      fee: '20'
+    },
+    {
+      id: 4,
+      name: '🎶 Musical Night',
+      desc: 'Live music and performances.',
+      bannerUrl: '/path/to/musical_night.jpg',
+      fee: '25'
+    },
+    {
+      id: 5,
+      name: '🎮 Fun, Games & More',
+      desc: 'Games, activities, and fun sessions.',
+      bannerUrl: '/path/to/fun_games.jpg',
+      fee: '5'
+    }
+  ])
   const [animatedEvents, setAnimatedEvents] = useState([])
   const [popup, setPopup] = useState({ show: false, event: null })
   const eventsCont = useRef(null)
   const navigate = useNavigate()
-
-  React.useEffect(() => {
-    api.common.events
-      .getAll()
-      .then((res) =>
-        res.data && res.data
-          ? setEvents(res.data.filter((item, index) => item?.featured))
-          : []
-      )
-      .catch((err) => console.log(err))
-  }, [])
 
   useEffect(() => {
     if (events && events.length > 0) setAnimatedEvents([events[0]])
@@ -106,22 +133,6 @@ function Schedules() {
           variants={animationParent}
           viewport={{ once: true }}
         >
-          {/* <Typography
-          color="secondary"
-          variant="h6"
-          align="center"
-          sx={{
-            borderBottom: 2,
-            fontSize: { xs: '14px', lg: '16px' },
-            py: 0.8,
-            letterSpacing: '1px',
-            width: '6.5rem',
-            whiteSpace: 'nowrap',
-            mb: 2
-          }}
-        >
-          OUR SCHEDULE
-        </Typography> */}
           <Typography
             variant="h4"
             sx={{ fontSize: { xs: '24px', md: '28px', lg: '32px' }, mb: 5 }}
@@ -163,19 +174,9 @@ function Schedules() {
               viewport={{ once: true }}
             >
               <Divider sx={{ flexGrow: 1 }} />
-              {/* <Link
-                component={RouterLink}
-                to="/events"
-                color="text.secondary"
-                // underline="hover"
-                sx={{ mx: 1, fontSize: '0.9rem', fontFamily: 'Poppins' }}
-              >
-                show me more events
-              </Link> */}
               <Button color="secondary" onClick={() => navigate('/events')}>
-                {/* Show me more events */}
+                Show me more events
               </Button>
-
               <Divider sx={{ flexGrow: 1 }} />
             </Box>
           </Container>
@@ -192,3 +193,4 @@ function Schedules() {
 }
 
 export default Schedules
+

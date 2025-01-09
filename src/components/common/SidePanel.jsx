@@ -71,7 +71,7 @@ function SidePanel({ anchorEl, close, isHome = false }) {
       case 'Home':
         return '/'
       case 'About':
-        return '#about'
+        return 'about'
       case 'Events':
         return '/#events'
       
