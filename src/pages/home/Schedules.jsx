@@ -174,9 +174,9 @@ function Schedules() {
               viewport={{ once: true }}
             >
               <Divider sx={{ flexGrow: 1 }} />
-              <Button color="secondary" onClick={() => navigate('/events')}>
+              {/* <Button color="secondary" onClick={() => navigate('/events')}>
                 Show me more events
-              </Button>
+              </Button> */}
               <Divider sx={{ flexGrow: 1 }} />
             </Box>
           </Container>
