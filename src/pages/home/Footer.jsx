@@ -33,11 +33,11 @@ const Footer = () => {
       description: 'Hridyaprabha M, Student Co-ordinator, Crescita 2.0',
       whatsapp: 'https://wa.me/917012229415',
     },
-    // {
-    //   label: '+91 9605980433',
-    //   description: 'Jacob George, Webmaster, Crescita 2.0',
-    //   whatsapp: 'https://wa.me/919605980433',
-    // },
+    {
+      label: '+91 9605980433',
+      description: 'Jacob George, Webmaster, Crescita 2.0',
+      whatsapp: 'https://wa.me/919605980433',
+    },
     {
       label: '+91 8129619257',
       description: 'Prof Rensi Sam Mathew, Staff Co-ordinator',
@@ -269,7 +269,7 @@ const Footer = () => {
               }}
             >
               <span>
-                &copy; {new Date().getFullYear()} Designed and Developed by IEEE SB LBSCEK
+                &copy; {new Date().getFullYear()} Designed and Developed by IEEE SB LBSCEK | Webmaster, Crescita 2.0
               </span>
 
             </Typography>
