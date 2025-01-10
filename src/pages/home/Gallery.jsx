@@ -6,7 +6,7 @@ import { motion } from 'framer-motion'
 // cultural
 import image1 from '../../../assets/teranis_22/1.jpg' // 1
 import image2 from '../../../assets/teranis_22/2.jpg'
-import image3 from '../../../assets/teranis_22/3.JPG'
+import image3 from '../../../assets/teranis_22/3.jpg'
 import image4 from '../../../assets/teranis_22/4.jpg'
 import image5 from '../../../assets/teranis_22/5.jpg'
 import image8 from '../../../assets/teranis_22/8.jpg'
@@ -20,10 +20,10 @@ import image13 from '../../../assets/teranis_22/13.jpg'
 import image6 from '../../../assets/teranis_22/6.jpg'
 import image7 from '../../../assets/teranis_22/7.jpg'
 
-import image10 from '../../../assets/teranis_22/10.JPG'
-import image11 from '../../../assets/teranis_22/11.JPG'
-import image14 from '../../../assets/teranis_22/14.JPG'
-import image15 from '../../../assets/teranis_22/15.JPG'
+import image10 from '../../../assets/teranis_22/10.jpg'
+import image11 from '../../../assets/teranis_22/11.jpg'
+import image14 from '../../../assets/teranis_22/14.jpg'
+import image15 from '../../../assets/teranis_22/15.jpg'
 import image16 from '../../../assets/teranis_22/16.jpg'
 
 
