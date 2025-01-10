@@ -21,7 +21,7 @@ import image6 from '../../../assets/teranis_22/6.jpg'
 import image7 from '../../../assets/teranis_22/7.jpg'
 
 import image10 from '../../../assets/teranis_22/10.jpg'
-import image11 from '../../../assets/teranis_22/11.jpg'
+// import image11 from '../../../assets/teranis_22/11.jpg'
 import image14 from '../../../assets/teranis_22/14.jpg'
 import image15 from '../../../assets/teranis_22/15.jpg'
 import image16 from '../../../assets/teranis_22/16.jpg'
@@ -42,7 +42,7 @@ const imageFiles = [
   image8,
   image9,
   image10,
-  image11,
+  // image11,
   image15,
   image13,
   image14,
