@@ -36,40 +36,41 @@ function Schedules() {
     {
       id: 1,
       name: '🛠 Workshops',
-      desc: 'Various technical workshops.',
+      desc: 'more informations will be coming soon..',
       bannerUrl: 'https://i.gyazo.com/b24d4a7ef0496e801231b162a909e9a1.jpg',
-      fee: '10',
-      date: '2022-10-10',
-      eventType: 'Technical'
+      // fee: '10',
+      // date: '2022-10-10',
+      // eventType: 'Technical'
     },
     {
       id: 2,
       name: '🎙 Inspiring Talks',
-      desc: 'Motivational and educational talks.',
-      bannerUrl: '/path/to/inspiring_talks.jpg',
-      fee: '15'
+      desc: 'more informations will be coming soon..',
+      bannerUrl: 'https://i.gyazo.com/299495f840b12a11effad16fbd355b81.jpg',
+      // fee: '15'
     },
     {
       id: 3,
       name: '🎭 Cultural Events',
-      desc: 'Celebrating diverse cultures.',
-      bannerUrl: '/path/to/cultural_events.jpg',
-      fee: '20'
+      desc: 'Cmore informations will be coming soon..',
+      bannerUrl: 'https://i.gyazo.com/d99f02f95d08d6b42cbb2d7ff75e8e06.jpg',
+      // fee: '20'
     },
     {
       id: 4,
       name: '🎶 Musical Night',
-      desc: 'Live music and performances.',
-      bannerUrl: '/path/to/musical_night.jpg',
-      fee: '25'
+      desc: 'more informations will be coming soon..',
+      bannerUrl: 'https://i.gyazo.com/dee64cd2fe429cef1c33f5878ed9b37b.jpg',
+      // fee: '25'
     },
     {
       id: 5,
       name: '🎮 Fun, Games & More',
-      desc: 'Games, activities, and fun sessions.',
-      bannerUrl: '/path/to/fun_games.jpg',
-      fee: '5'
+      desc: 'more informations will be coming soon..',
+      bannerUrl: 'https://i.gyazo.com/4018cd1723d4bb3718414851d94d3218.jpg',
+      // fee: '5'
     }
+
   ])
   const [animatedEvents, setAnimatedEvents] = useState([])
   const [popup, setPopup] = useState({ show: false, event: null })

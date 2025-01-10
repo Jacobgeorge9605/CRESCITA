@@ -96,7 +96,20 @@ function Cover() {
         letterSpacing="1.5px"
       />
       <br />
+
       <EventTimer date="2025-01-24T00:00:00" size="medium" />
+
+      <Typography
+        variant="h6"
+        sx={{
+          color: 'white',
+          fontSize: { xs: '12px', md: '16px', lg: '20px' },
+          textAlign: 'center',
+        }}
+      >
+        Happening on <span style={{ color: '#04d9ff' }}>January 24, 25, and 26</span>
+      </Typography>
+      
 
       <Button
         component={motion.button}

@@ -6,6 +6,9 @@ import { HiOutlineGlobe } from 'react-icons/hi';
 import { motion } from 'framer-motion';
 import logo from '../../../assets/teranis_logo.png';
 import GMap from '../../components/GMap';
+// import FaqSection from './Faq';
+
+
 
 const animationParent = {
   hidden: { opacity: 0, y: 10 },

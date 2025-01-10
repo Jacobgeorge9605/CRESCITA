@@ -4,10 +4,13 @@ import { motion } from 'framer-motion'
 
 // image imports
 // cultural
+import image1 from '../../../assets/teranis_22/1.jpg' // 1
 import image2 from '../../../assets/teranis_22/2.jpg'
+import image3 from '../../../assets/teranis_22/3.JPG'
 import image4 from '../../../assets/teranis_22/4.jpg'
 import image5 from '../../../assets/teranis_22/5.jpg'
 import image8 from '../../../assets/teranis_22/8.jpg'
+// import image16 from '../../../assets/teranis_22/16.JPG'
 import image9 from '../../../assets/teranis_22/9.jpg'
 import image13 from '../../../assets/teranis_22/13.jpg'
 
@@ -19,22 +22,32 @@ import image7 from '../../../assets/teranis_22/7.jpg'
 
 import image10 from '../../../assets/teranis_22/10.JPG'
 import image11 from '../../../assets/teranis_22/11.JPG'
-import image12 from '../../../assets/teranis_22/12.JPG'
+import image14 from '../../../assets/teranis_22/14.JPG'
+import image15 from '../../../assets/teranis_22/15.JPG'
+import image16 from '../../../assets/teranis_22/16.jpg'
+
+
+
 
 import GalleryImages from '../../components/gallery/GalleryImages'
 
 const imageFiles = [
+  image3,
   image4,
+  image1,
   image6,
-  // image2,
-  // image5,
+  image2,
+  image5,
   image7,
   image8,
   image9,
   image10,
   image11,
-  image12
-  // image13
+  image15,
+  image13,
+  image14,
+  image15,
+  image16,
 ]
 
 const animationParent = {
@@ -104,7 +117,7 @@ export default function Gallery() {
           variants={animationChild}
           viewport={{ once: true }}
         >
-          Moments of CRESCITA 2019
+          Moments of CRESCITA 1.0
            {/* &apos;23 */}
         </Typography>
 
