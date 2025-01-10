@@ -273,8 +273,8 @@ export default function EventPopup({ event, close, isOpen = false }) {
           >
             {event?.fee && (
               <>
-                <Field>ENTRY FEE:</Field>
-                <Field>&#8377;{event.fee}</Field>
+                {/* <Field>ENTRY FEE:</Field> */}
+                {/* <Field>&#8377;{event.fee}</Field> */}
               </>
             )}
           </Box>
