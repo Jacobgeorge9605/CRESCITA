@@ -15,9 +15,9 @@ import image9 from '../../../assets/teranis_22/9.jpg'
 // import image10 from '../../../assets/teranis_22/10.jpg'
 import image11 from '../../../assets/teranis_22/11.jpg'
 import image13 from '../../../assets/teranis_22/13.jpg'
-import image14 from '../../../assets/teranis_22/14.jpg'
+// import image14 from '../../../assets/teranis_22/14.jpg'
 import image15 from '../../../assets/teranis_22/15.jpg'
-import image16 from '../../../assets/teranis_22/16.jpg'
+// import image16 from '../../../assets/teranis_22/16.jpg'
 
 import GalleryImages from '../../components/gallery/GalleryImages'
 
@@ -35,8 +35,8 @@ const imageFiles = [
   image11,
   image15,
   image13,
-  image14,
-  image16,
+  // image14,
+  // image16,
 ]
 
 const animationParent = {
