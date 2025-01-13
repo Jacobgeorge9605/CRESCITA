@@ -459,7 +459,7 @@ function EventCard({ open, ...props }) {
             </Typography>
 
             <Typography sx={{ px: 1 }}>
-              {event.fee && <Field>ENTRY FEE: &#8377;{event.fee}</Field>}
+              {event.fee && <Field>: &#8377;{event.fee}</Field>}
             </Typography>
 
             <Typography sx={{ px: 1 }}>

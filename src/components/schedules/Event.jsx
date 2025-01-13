@@ -3,7 +3,7 @@ import { Box, Button, Typography } from '@mui/material'
 import React from 'react'
 import { BsFillGiftFill } from 'react-icons/bs'
 import { MdCategory } from 'react-icons/md'
-import { IoTicketOutline } from 'react-icons/io5'
+// import { IoTicketOutline } from 'react-icons/io5'
 import { AiFillCalendar } from 'react-icons/ai'
 import imagefile from '../../../assets/teranis_22/2.jpg'
 
@@ -187,8 +187,8 @@ function Event({ data, open, ...props }) {
                 fontSize: { xs: '11px', md: '12px', lg: '14px' }
               }}
             >
-              <IoTicketOutline />
-              {data?.fee ? `₹${data.fee}` : 'Entry fee'}
+              {/* <IoTicketOutline /> */}
+              {/* {data?.fee ? `₹${data.fee}` : 'Entry fee'} */}
             </Typography>
           </Box>
         </Box>
