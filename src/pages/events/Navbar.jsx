@@ -69,7 +69,7 @@ export default function EventAppBar() {
               textDecoration:'none'
             }}
           >
-            TERANIS
+            CRESCITA 2.0
           </Typography>
         </Toolbar>
               </Link>

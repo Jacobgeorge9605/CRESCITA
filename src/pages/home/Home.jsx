@@ -14,7 +14,7 @@ import Gallery from './Gallery'
 import Ambassador from './Ambassador'
 import Cover from './Cover'
 import Loading from '../../components/common/Loading'
-import FaqSection from './faq'
+// import FaqSection from './faq'
 
 const pageCount = 6
 
@@ -64,7 +64,7 @@ function Home() {
       {/* <Sponsor /> */}
       {/* <Ambassador /> */}
       <Gallery />
-      <FaqSection />
+      {/* <FaqSection /> */}
       <Footer />
     </div>
   )

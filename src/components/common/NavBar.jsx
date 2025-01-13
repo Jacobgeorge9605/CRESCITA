@@ -28,7 +28,7 @@ function NavBar() {
       // 'CA Profile',
       // 'CA Leaderboard',
       'Gallery',
-      'FAQ',
+      // 'FAQ',
       'Contact',
     ]
     : [
@@ -39,7 +39,7 @@ function NavBar() {
       // 'Campus Ambassador',
       // 'CA Leaderboard',
       'Gallery',
-      'FAQ',
+      // 'FAQ',
       'Contact',
     ]
 
@@ -78,8 +78,8 @@ function NavBar() {
         return '/#sponsor'
       case 'Gallery':
         return '/#gallery'
-      case 'FAQ':
-        return '/#FAQ'
+      // case 'FAQ':
+      //   return '/#FAQ'
       case 'Contact':
         return '/#contact-us'
       // case 'Campus Ambassador':
