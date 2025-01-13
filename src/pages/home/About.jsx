@@ -85,6 +85,8 @@ function About() {
             {/* &apos;24 */}
           </Typography>
 
+
+
           <Typography
             component={motion.p}
             variants={animationChild}
