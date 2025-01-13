@@ -57,7 +57,7 @@ const AnimatedText = ({ text, variant, fontSize, letterSpacing }) => (
 
 // Cover Component
 function Cover() {
-  const registrationLink = "https://forms.gle/qpsBnJVdueBW5kHM6"; // Registration form link
+  const registrationLink = "https://forms.gle/GJsXams4hYMgcqUh8"; // Registration form link
 
   return (
     <Box
@@ -132,7 +132,7 @@ function Cover() {
           },
         }}
       >
-        Register Now (Early Bird offer)
+        Register Now
       </Button>
 
 
