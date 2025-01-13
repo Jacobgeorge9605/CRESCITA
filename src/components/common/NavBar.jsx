@@ -71,17 +71,17 @@ function NavBar() {
       case 'About':
         return '#about'
       case 'Events':
-        return '/#events'
+        return '#events'
       case 'Footer':
-        return '/#footer'
+        return '#footer'
       case 'Sponsors':
-        return '/#sponsor'
+        return '#sponsor'
       case 'Gallery':
-        return '/#gallery'
+        return '#gallery'
       // case 'FAQ':
       //   return '/#FAQ'
       case 'Contact':
-        return '/#contact-us'
+        return '#contact-us'
       // case 'Campus Ambassador':
       //   return '/#campus-ambassador'
       // case 'CA Profile':

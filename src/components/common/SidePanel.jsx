@@ -71,14 +71,16 @@ function SidePanel({ anchorEl, close, isHome = false }) {
       case 'Home':
         return '/'
       case 'About':
-        return 'about'
+        return '#about'
       case 'Events':
-        return '/#events'
+        return '#events'
       
       case 'Gallery':
-        return '/#gallery'
+        return '#gallery'
       case 'Sponsors':
-        return '/#Contact US'
+        return '#Contact US'
+      case 'Contact US':
+        return '#Contact US'
       // case 'Campus Ambassador':
       //   return '/#campus-ambassador'
       // case 'CA Profile':
