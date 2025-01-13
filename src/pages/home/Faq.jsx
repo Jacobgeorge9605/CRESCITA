@@ -170,7 +170,7 @@ const FaqSection = () => {
                         py: 0.8,
                         letterSpacing: "1px",
                         width: "fit-content",
-                        margin: "0 auto",
+                        // margin: "0 auto",
                         mb: 2,
                         fontSize: { xs: "14px", lg: "16px" },
                         textAlign: "left",  // Align to the left
